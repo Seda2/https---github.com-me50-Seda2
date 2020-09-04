@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Search</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-2" id="mainNav">
+        <div class="container">
+            <img src="glogo.png" style="width: 120px; height: 50px;" class="navbar-brand">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" style="color: black; font-size: 14px">Google Search</a>
+                    </li>
+                </ul>
+        </div>
+    </nav>
+    <form action="https://google.com/search">
+    <div class="container-fluid" id="AdvancedSearch">
+        <h4 class="text-left ml-4 pb-2" style="color: rgb(221, 15, 15);">Advanced Search</h4>
+        <hr>
+        <div class="row">
+            <p class=" col-md-6 ml-4 mb-2" style="font-size: 18px; margin-top: 2.5%">Find pages with...</p>
+            <h1 class=" col-md-3 ml-4  text-center" style="font-size: 14px; font-weight: bold; margin-top: 2.5%; color: grey;">To do this in the search box.</h1>
+        </div>
+        
+        <div class="row">
+                <!---all these words:-->
+                <label class="col-md-2 ml-4 mt-2" style="font-size:14px">all these words:</label>
+                <div class="form-input col-md-5 mb-2">
+                    <input name="q" autofocus type="text" class="form-control">
+                </div>
+                <h1 class=" col-md-4 mb-2 mt-2 text-left" style="font-size: 11px; color: rgb(109, 108, 108);">Type the important words: tri-colour rat terrier</h1>
+                    <div class="valid-feedback">
+                    Looks good!
+                    </div>
+            </div>
+
+            <div class="row">
+                 <!--this exact word or phrase:-->
+                 <label class="col-md-2 ml-4 mt-2" style="font-size:14px">this exact word or phrase:</label>
+                 <div class="form-input col-md-5 mb-2">
+                    <input name="q" type="text" class="form-control">
+                 </div>
+                 <h1 class=" col-md-4 mb-2 mt-2 text-left" style="font-size: 11px; color: rgb(109, 108, 108);">Put exact words in quotes: "rat terrier"</h1>
+                    <div class="valid-feedback">
+                    Looks good!
+                    </div>
+            </div>
+
+            <div class="row">
+                <!--any of these words:-->
+                <label class="col-md-2 ml-4 mt-2" style="font-size:14px">any of these words:</label>
+                <div class="form-input col-md-5 mb-2">
+                   <input name="q" type="text" class="form-control">
+                </div>
+                <h1 class=" col-md-4 mb-2 mt-2 text-left" style="font-size: 11px; color: rgb(109, 108, 108);">Type OR between all the words you want: miniature OR standard</h1>
+                    <div class="valid-feedback">
+                    Looks good!
+                    </div>
+            </div>
+
+            <div class="row">
+                <!--none of these words:-->
+                <label class="col-md-2 ml-4 mt-2" style="font-size:14px">none of these words:</label>
+                <div class="form-input col-md-5 mb-2">
+                   <input name="q" type="text" class="form-control">
+                </div>
+                <h1 class=" col-md-3 mb-2 mt-1 text-left" style="font-size: 11px; color: rgb(109, 108, 108);">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"
+                </h1>
+                    <div class="valid-feedback">
+                    Looks good!
+                    </div>
+            </div>
+
+                <!--Advanced Search Button-->
+            <div class="row-mt-3">
+                <div class="col-md-7 mt-4 pb-5 pr-0 text-right">
+                    <button class="btn btn-primary" style="border:none" type="submit">Advanced Search</button>
+                </div>
+            </div>
+
+        </div>
+        </form>
+    </div>
+</body>
+</html>
