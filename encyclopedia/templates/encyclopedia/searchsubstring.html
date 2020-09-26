@@ -1,0 +1,11 @@
+{% extends "encyclopedia/layout.html" %}
+
+
+{% block body %}
+    <h1>Search Results</h1>
+    {% for result in results %}
+
+    <li><a href="{% url 'title' result %}" style="font-size: 24px;">{{ result|safe }}</a></li>
+
+    {% endfor %}
+{% endblock %}
